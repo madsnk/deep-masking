@@ -1,15 +1,3 @@
-#First update and install pip, virtualenv etc.
-sudo apt-get update
-sudo apt-get -y upgrade
-sudo apt-get -y install pip
-export LC_ALL=C
-echo 'export LC_ALL=C' >> ~/.bashrc 
-pip install --upgrade pip
-pip install virtualenv
-virtualenv -p python3 venv
-. venv/bin/activate
-pip install jupyter
-
 #Download and install cuda 9.0 and cudnn 7.0
 #https://yangcha.github.io/CUDA90/
 wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_9.0.176-1_amd64.deb
