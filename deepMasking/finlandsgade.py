@@ -105,14 +105,11 @@ class FinlandsgadeDataset(utils.Dataset):
         # Add classes. We have only one class to add.
         #self.add_class("finlandsgade", 1, "car")
 
-        for x in range(0, 3):
-            print("We're on time %d" % (x))
-
         # Add all coco classes so data fits with pretrained COCO model
         #class_indice = 1
-        #for i in range(1, 81):
-            #print(i)
-            #self.add_class("finlandsgade", i, class_names[i])
+        for i in range(1, 81):
+            print(i)
+            self.add_class("finlandsgade", i, class_names[i])
 
         # Train or validation dataset?
         assert subset in ["train", "val"]
