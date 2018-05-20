@@ -109,7 +109,7 @@ class FinlandsgadeDataset(utils.Dataset):
         #class_indice = 1
         for i in range(1, 81):
             print(i)
-            self.add_class("finlandsgade", i, class_names[i])
+            #self.add_class("finlandsgade", i, class_names[i])
 
         # Train or validation dataset?
         assert subset in ["train", "val"]
