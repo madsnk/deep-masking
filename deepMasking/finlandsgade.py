@@ -65,7 +65,7 @@ class FinlandsgadeConfig(Config):
     IMAGES_PER_GPU = 1
 
     # Number of classes (including background)
-    NUM_CLASSES = 1 + 1  # Background + cars
+    NUM_CLASSES = 1 + 80  # Background + cars
 
     # Number of training steps per epoch
     STEPS_PER_EPOCH = 100
