@@ -108,7 +108,6 @@ class FinlandsgadeDataset(utils.Dataset):
         # Add all coco classes so data fits with pretrained COCO model
         #class_indice = 1
         for i in range(1, 81):
-            print(i)
             self.add_class("finlandsgade", i, class_names[i])
 
         # Train or validation dataset?
